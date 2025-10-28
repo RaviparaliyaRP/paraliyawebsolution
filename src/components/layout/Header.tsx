@@ -40,12 +40,12 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 group">
-            <div className="relative w-10 h-10 lg:w-12 lg:h-12">
+            <div className="relative w-14 h-14 lg:w-16 lg:h-16">
               <Image
                 src="/images/pws/pws-logo.png"
                 alt="Paraliya Web Solution Logo"
-                width={48}
-                height={48}
+                width={64}
+                height={64}
                 className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
               />
             </div>
