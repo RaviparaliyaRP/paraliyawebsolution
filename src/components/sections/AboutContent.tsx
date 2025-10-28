@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Users, Eye, Zap, Headphones, Linkedin, Github, Mail } from 'lucide-react';
+import Image from 'next/image';
 import Card from '@/components/ui/Card';
 
 const AboutContent = () => {
@@ -34,6 +35,7 @@ const AboutContent = () => {
       role: 'Founder & Lead Developer',
       bio: 'Full-stack developer with expertise in modern web technologies. Passionate about creating efficient, user-friendly solutions that help businesses grow.',
       avatar: 'RP',
+      image: '/images/ravi.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/raviparaliyarp',
         github: '#',
@@ -45,6 +47,7 @@ const AboutContent = () => {
       role: 'UI/UX Designer',
       bio: 'Creative designer focused on crafting intuitive and visually appealing user experiences. Skilled in translating ideas into seamless interfaces that balance aesthetics and functionality.',
       avatar: 'SP',
+      image: '/images/shreekant.jpg',
       social: {
         linkedin: '#',
         github: '#',
@@ -198,9 +201,15 @@ const AboutContent = () => {
                 viewport={{ once: true }}
               >
                 <Card variant="elevated" hover className="p-8 text-center">
-                  {/* Avatar */}
-                  <div className="w-24 h-24 bg-gradient-to-br from-accent-purple to-accent-blue rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6">
-                    {member.avatar}
+                  {/* Profile Photo */}
+                  <div className="w-24 h-24 mx-auto mb-6 relative">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      width={96}
+                      height={96}
+                      className="w-full h-full object-cover rounded-full border-4 border-gray-100 shadow-lg"
+                    />
                   </div>
 
                   {/* Name & Role */}

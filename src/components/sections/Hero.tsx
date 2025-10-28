@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Star, CheckCircle, Clock, Heart } from 'lucide-react';
+import Image from 'next/image';
 import Button from '@/components/ui/Button';
 import Badge from '@/components/ui/Badge';
 import Link from 'next/link';
@@ -156,6 +157,35 @@ const Hero = () => {
                 className="absolute -bottom-4 -left-4 w-20 h-20 bg-white rounded-xl shadow-lg flex items-center justify-center"
               >
                 <CheckCircle className="w-10 h-10 text-green-500" />
+              </motion.div>
+
+              {/* Team Photos as Floating Elements */}
+              <motion.div
+                animate={{ y: [-5, 5, -5] }}
+                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute top-1/4 -left-8 w-16 h-16 bg-white rounded-full shadow-lg p-1"
+              >
+                <Image
+                  src="/images/ravi.jpg"
+                  alt="Ravi Paraliya"
+                  width={56}
+                  height={56}
+                  className="w-full h-full object-cover rounded-full"
+                />
+              </motion.div>
+
+              <motion.div
+                animate={{ y: [5, -5, 5] }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute top-3/4 -right-8 w-16 h-16 bg-white rounded-full shadow-lg p-1"
+              >
+                <Image
+                  src="/images/shreekant.jpg"
+                  alt="Shreekant Paraliya"
+                  width={56}
+                  height={56}
+                  className="w-full h-full object-cover rounded-full"
+                />
               </motion.div>
             </div>
           </motion.div>
