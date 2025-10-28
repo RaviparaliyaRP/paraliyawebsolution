@@ -1,0 +1,116 @@
+{
+  "lastUpdated": "2025-01-28",
+  "currency": "INR",
+  "services": [
+    {
+      "id": "business-website",
+      "name": "Business Website",
+      "basePrice": 25000,
+      "minPrice": 20000,
+      "maxPrice": 40000,
+      "description": "Professional website for small-medium businesses",
+      "icon": "Monitor",
+      "popular": false
+    },
+    {
+      "id": "ecommerce",
+      "name": "E-Commerce Store",
+      "basePrice": 50000,
+      "minPrice": 45000,
+      "maxPrice": 80000,
+      "description": "Full-featured online store with payment integration",
+      "icon": "ShoppingCart",
+      "popular": true
+    },
+    {
+      "id": "custom-app",
+      "name": "Custom Web Application",
+      "basePrice": 100000,
+      "minPrice": 90000,
+      "maxPrice": 200000,
+      "description": "Tailored solutions for unique business needs",
+      "icon": "Code",
+      "popular": false
+    }
+  ],
+  "addons": [
+    {
+      "id": "pages-10-20",
+      "name": "10-20 Pages",
+      "price": 10000,
+      "category": "pages",
+      "description": "Extended page count"
+    },
+    {
+      "id": "pages-20-plus",
+      "name": "20+ Pages",
+      "price": 20000,
+      "category": "pages",
+      "description": "Large website structure"
+    },
+    {
+      "id": "payment-gateway",
+      "name": "Payment Gateway Integration",
+      "price": 15000,
+      "category": "features",
+      "description": "Razorpay/Stripe integration",
+      "applicableTo": ["ecommerce"]
+    },
+    {
+      "id": "blog-cms",
+      "name": "Blog/CMS",
+      "price": 8000,
+      "category": "features",
+      "description": "Content management system"
+    },
+    {
+      "id": "seo-package",
+      "name": "SEO Optimization",
+      "price": 12000,
+      "category": "features",
+      "description": "On-page SEO setup"
+    },
+    {
+      "id": "custom-design",
+      "name": "Custom Design",
+      "price": 15000,
+      "category": "design",
+      "description": "Unique design from scratch"
+    },
+    {
+      "id": "premium-design",
+      "name": "Premium Design",
+      "price": 30000,
+      "category": "design",
+      "description": "High-end custom design with animations"
+    },
+    {
+      "id": "mobile-app",
+      "name": "Mobile App Version",
+      "price": 40000,
+      "category": "features",
+      "description": "Native mobile app companion"
+    }
+  ],
+  "timeline": {
+    "business-website": "2-3 weeks",
+    "ecommerce": "4-6 weeks",
+    "custom-app": "6-12 weeks"
+  },
+  "discounts": [
+    {
+      "id": "first-time",
+      "name": "First Time Client",
+      "type": "percentage",
+      "value": 10,
+      "description": "10% off for new clients"
+    },
+    {
+      "id": "referral",
+      "name": "Referral Discount",
+      "type": "percentage",
+      "value": 15,
+      "description": "15% off if referred by existing client"
+    }
+  ]
+}
