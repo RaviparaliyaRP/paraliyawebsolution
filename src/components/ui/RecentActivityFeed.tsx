@@ -20,17 +20,17 @@ const RecentActivityFeed = () => {
       time: '1 hour ago',
     },
     {
-      icon: '📱',
+      icon: '✅',
       text: 'Priya from Ahmedabad requested a quote',
       time: '15 minutes ago',
     },
     {
-      icon: '⚡',
+      icon: '✅',
       text: 'Website delivered to Desai Consultancy',
       time: '3 hours ago',
     },
     {
-      icon: '🚀',
+      icon: '✅',
       text: 'Project launched for Restaurant Chain',
       time: '45 minutes ago',
     },
@@ -40,7 +40,7 @@ const RecentActivityFeed = () => {
     const interval = setInterval(() => {
       setIsVisible(true);
       setCurrentMessage((prev) => (prev + 1) % messages.length);
-    }, 8000); // Show every 8 seconds
+    }, 12000); // Show every 12 seconds
 
     return () => clearInterval(interval);
   }, [messages.length]);
