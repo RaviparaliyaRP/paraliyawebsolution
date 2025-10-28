@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Monitor, ShoppingCart, Code, Check, ArrowRight } from 'lucide-react';
+import { Monitor, ShoppingCart, Code, Check, ArrowRight, Clock } from 'lucide-react';
 import Card from '@/components/ui/Card';
 import Badge from '@/components/ui/Badge';
 import Button from '@/components/ui/Button';
@@ -16,6 +16,13 @@ const ServicesDetailed = () => {
       title: 'Professional Business Websites',
       description: 'Perfect for small to medium businesses looking to establish professional online presence. We create websites that not only look great but also drive real business results.',
       price: '₹25,000',
+      timeline: '2-3 Weeks',
+      timelinePhases: [
+        { name: 'Week 1: Discovery & Design', progress: 60 },
+        { name: 'Week 2: Development', progress: 100 },
+        { name: 'Week 3: Testing & Launch', progress: 40 },
+      ],
+      deliveryDays: '14-21 days',
       features: [
         'Up to 10 custom pages',
         'Mobile responsive design',
@@ -40,6 +47,13 @@ const ServicesDetailed = () => {
       title: 'E-Commerce Solutions',
       description: 'Complete online store solution to sell your products nationwide. From product listings to secure payments, we handle everything you need to run a successful online business.',
       price: '₹50,000',
+      timeline: '4-6 Weeks',
+      timelinePhases: [
+        { name: 'Week 1-2: Planning & Design', progress: 60 },
+        { name: 'Week 3-4: Development', progress: 100 },
+        { name: 'Week 5-6: Testing & Integration', progress: 60 },
+      ],
+      deliveryDays: '28-42 days',
       features: [
         'Product catalog management',
         'Shopping cart & checkout',
@@ -65,6 +79,13 @@ const ServicesDetailed = () => {
       title: 'Custom Web Applications',
       description: 'Tailored solutions for complex business requirements. We build scalable applications that grow with your business, whether it\'s a booking system, management portal, or SaaS product.',
       price: '₹1,00,000',
+      timeline: '6-12 Weeks',
+      timelinePhases: [
+        { name: 'Week 1-2: Requirements & Design', progress: 30 },
+        { name: 'Week 3-8: Development', progress: 100 },
+        { name: 'Week 9-12: Testing & Deployment', progress: 60 },
+      ],
+      deliveryDays: '42-84 days',
       features: [
         'Custom functionality',
         'Database architecture',
@@ -142,6 +163,37 @@ const ServicesDetailed = () => {
                     <div className="inline-flex items-center bg-gradient-to-r from-accent-purple to-accent-blue text-white px-6 py-3 rounded-lg">
                       <span className="text-lg font-semibold">Starting from {service.price}</span>
                     </div>
+                  </div>
+
+                  {/* Timeline Estimator */}
+                  <div className="mb-8 bg-gray-50 border border-gray-200 rounded-lg p-6">
+                    <div className="flex items-center space-x-3 mb-4">
+                      <Clock className="w-8 h-8 text-accent-purple" />
+                      <h4 className="text-xl font-display font-bold text-gray-900">
+                        Estimated Timeline: {service.timeline}
+                      </h4>
+                    </div>
+                    <div className="space-y-3">
+                      {service.timelinePhases.map((phase, idx) => (
+                        <div key={idx}>
+                          <div className="flex items-center justify-between mb-2">
+                            <p className="text-sm font-semibold text-gray-900">{phase.name}</p>
+                          </div>
+                          <div className="w-full bg-gray-200 rounded-full h-2">
+                            <motion.div
+                              initial={{ width: 0 }}
+                              whileInView={{ width: `${phase.progress}%` }}
+                              transition={{ duration: 0.8, delay: idx * 0.2 }}
+                              viewport={{ once: true }}
+                              className="h-2 bg-gradient-to-r from-accent-purple to-accent-blue rounded-full"
+                            />
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                    <p className="text-xs text-gray-500 italic mt-4">
+                      Typical delivery: {service.deliveryDays}
+                    </p>
                   </div>
 
                   {/* Features */}

@@ -5,9 +5,9 @@
     {
       "id": "business-website",
       "name": "Business Website",
-      "basePrice": 25000,
-      "minPrice": 20000,
-      "maxPrice": 40000,
+      "basePrice": 5000,
+      "minPrice": 10000,
+      "maxPrice": 25000,
       "description": "Professional website for small-medium businesses",
       "icon": "Monitor",
       "popular": false
