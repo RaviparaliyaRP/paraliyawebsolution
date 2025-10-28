@@ -41,9 +41,13 @@ const Header = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 group">
             <div className="relative w-10 h-10 lg:w-12 lg:h-12">
-              <div className="w-full h-full bg-brand-dark rounded-full flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-                <span className="text-white font-bold text-sm lg:text-base">PWS</span>
-              </div>
+              <Image
+                src="/images/pws/pws-logo.png"
+                alt="Paraliya Web Solution Logo"
+                width={48}
+                height={48}
+                className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+              />
             </div>
             <div className="hidden sm:block">
               <span className="text-lg lg:text-xl font-display font-bold text-gray-900">

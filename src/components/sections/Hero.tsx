@@ -133,8 +133,14 @@ const Hero = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-accent-blue via-accent-purple to-blue-600 rounded-3xl transform -rotate-6 opacity-30"></div>
                 <div className="absolute inset-4 bg-gradient-to-br from-accent-purple to-accent-blue rounded-3xl flex items-center justify-center">
                   <div className="text-center text-white p-8">
-                    <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 backdrop-blur-sm">
-                      <span className="text-2xl font-bold">PWS</span>
+                    <div className="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4 backdrop-blur-sm p-3">
+                      <Image
+                        src="/images/pws/pws-logo.png"
+                        alt="Paraliya Web Solution Logo"
+                        width={56}
+                        height={56}
+                        className="w-full h-full object-contain"
+                      />
                     </div>
                     <h3 className="text-xl font-semibold mb-2">Modern Web Solutions</h3>
                     <p className="text-white/80">Built for Performance & Growth</p>

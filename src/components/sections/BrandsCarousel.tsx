@@ -44,7 +44,7 @@ const BrandsCarousel = () => {
               x: {
                 repeat: Infinity,
                 repeatType: "loop",
-                duration: 15,
+                duration: 10,
                 ease: "linear",
               },
             }}
