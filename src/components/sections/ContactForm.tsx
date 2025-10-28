@@ -58,12 +58,20 @@ const ContactForm = () => {
     setStatus({ type: '', message: '' });
 
     try {
-      const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzs-8WKPOaCmJhbZ497Y4CTm-ndpXvHriwXQfBR5OGf4myVyTvppmfbz27s-BILM7bx/exec';
+      const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx3BmAb_4Sa_urataImQpp1DiD4ObCWefdyF3g5CVwkw-DQekJr_TQUkP-j8RkDSeFp/exec';
       
       // Format data for Google Sheets
       const submitData = {
-        ...formData,
-        contactMethod: formData.contactMethod.join(', ') || 'Email' // Default to email if none selected
+        timestamp: new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }),
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        company: formData.company || 'N/A',
+        service: formData.service,
+        budget: formData.budget,
+        message: formData.message,
+        contactMethod: formData.contactMethod.join(', ') || 'Email',
+        status: 'New Lead'
       };
 
       const response = await fetch(SCRIPT_URL, {
