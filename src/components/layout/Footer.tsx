@@ -56,12 +56,12 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center space-x-3 mb-4">
-              <div className="w-16 h-16">
+              <div className="w-20 h-20">
                 <Image
                   src="/images/pws/footer-logo.png"
                   alt="Paraliya Web Solution Logo"
-                  width={64}
-                  height={64}
+                  width={80}
+                  height={80}
                   className="w-full h-full object-contain"
                 />
               </div>
