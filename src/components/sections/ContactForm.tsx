@@ -6,8 +6,19 @@ import { Mail, Phone, MapPin, MessageCircle, Loader2 } from 'lucide-react';
 import Card from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
 
+interface FormData {
+  name: string;
+  email: string;
+  phone: string;
+  company: string;
+  service: string;
+  budget: string;
+  message: string;
+  contactMethod: string[];
+}
+
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
     phone: '',
@@ -18,7 +29,7 @@ const ContactForm = () => {
     contactMethod: []
   });
   
-  const [status, setStatus] = useState({ type: '', message: '' });
+  const [status, setStatus] = useState<{ type: 'success' | 'error' | ''; message: string }>({ type: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   // Handle text/select inputs
