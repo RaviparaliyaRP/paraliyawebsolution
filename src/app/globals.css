@@ -64,8 +64,13 @@ body {
   background: var(--gray-500);
 }
 
-/* Focus styles */
+/* Focus styles - Remove default focus rings */
 *:focus {
+  outline: none;
+}
+
+/* Custom focus styles for accessibility (only for keyboard navigation) */
+*:focus-visible {
   outline: 2px solid var(--accent-purple);
   outline-offset: 2px;
 }

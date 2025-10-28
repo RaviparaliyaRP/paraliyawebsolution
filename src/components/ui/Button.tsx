@@ -18,13 +18,13 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     disabled,
     ...props 
   }, ref) => {
-    const baseClasses = 'inline-flex items-center justify-center font-semibold rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed hover:scale-105 active:scale-95';
+    const baseClasses = 'inline-flex items-center justify-center font-semibold rounded-lg transition-all duration-300 focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed hover:scale-105 active:scale-95';
     
     const variants = {
-      primary: 'bg-gradient-to-r from-accent-purple to-accent-blue text-white hover:shadow-brand-lg focus:ring-accent-purple',
-      secondary: 'bg-gray-100 text-gray-900 hover:bg-gray-200 focus:ring-gray-500',
-      outline: 'border-2 border-accent-purple text-accent-purple hover:bg-accent-purple hover:text-white focus:ring-accent-purple',
-      ghost: 'text-gray-700 hover:bg-gray-100 hover:text-accent-purple focus:ring-gray-500',
+      primary: 'bg-gradient-to-r from-accent-purple to-accent-blue text-white hover:shadow-brand-lg',
+      secondary: 'bg-gray-100 text-gray-900 hover:bg-gray-200',
+      outline: 'border-2 border-accent-purple text-accent-purple hover:bg-accent-purple hover:text-white',
+      ghost: 'text-gray-700 hover:bg-gray-100 hover:text-accent-purple',
     };
 
     const sizes = {

@@ -58,7 +58,7 @@ const Header = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 hover:text-accent-purple font-medium transition-colors duration-200 relative group"
+                className="text-gray-700 hover:text-accent-purple font-medium transition-colors duration-200 relative group focus:outline-none"
               >
                 {item.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent-purple transition-all duration-300 group-hover:w-full"></span>
@@ -70,14 +70,14 @@ const Header = () => {
           <div className="hidden lg:flex items-center space-x-4">
             <a
               href="tel:+919898463251"
-              className="flex items-center space-x-2 text-gray-700 hover:text-accent-purple transition-colors duration-200"
+              className="flex items-center space-x-2 text-gray-700 hover:text-accent-purple transition-colors duration-200 focus:outline-none"
             >
               <Phone className="w-4 h-4" />
               <span className="font-medium">+91 9898463251</span>
             </a>
             <Link
               href="/contact"
-              className="bg-gradient-to-r from-accent-purple to-accent-blue text-white px-6 py-2.5 rounded-lg font-semibold hover:shadow-brand-lg transition-all duration-300 transform hover:scale-105"
+              className="bg-gradient-to-r from-accent-purple to-accent-blue text-white px-6 py-2.5 rounded-lg font-semibold hover:shadow-brand-lg transition-all duration-300 transform hover:scale-105 focus:outline-none"
             >
               Get Free Consultation
             </Link>
@@ -86,7 +86,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-2 rounded-lg text-gray-700 hover:text-accent-purple hover:bg-gray-100 transition-colors duration-200"
+            className="lg:hidden p-2 rounded-lg text-gray-700 hover:text-accent-purple hover:bg-gray-100 transition-colors duration-200 focus:outline-none"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -110,7 +110,7 @@ const Header = () => {
                   key={item.name}
                   href={item.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className="block text-gray-700 hover:text-accent-purple font-medium py-2 transition-colors duration-200"
+                  className="block text-gray-700 hover:text-accent-purple font-medium py-2 transition-colors duration-200 focus:outline-none"
                 >
                   {item.name}
                 </Link>
@@ -119,7 +119,7 @@ const Header = () => {
               <div className="pt-4 border-t border-gray-200 space-y-3">
                 <a
                   href="tel:+919898463251"
-                  className="flex items-center space-x-2 text-gray-700 hover:text-accent-purple transition-colors duration-200 py-2"
+                  className="flex items-center space-x-2 text-gray-700 hover:text-accent-purple transition-colors duration-200 py-2 focus:outline-none"
                 >
                   <Phone className="w-4 h-4" />
                   <span className="font-medium">+91 9898463251</span>
@@ -127,7 +127,7 @@ const Header = () => {
                 <Link
                   href="/contact"
                   onClick={() => setIsMenuOpen(false)}
-                  className="block w-full bg-gradient-to-r from-accent-purple to-accent-blue text-white text-center px-6 py-3 rounded-lg font-semibold hover:shadow-brand-lg transition-all duration-300"
+                  className="block w-full bg-gradient-to-r from-accent-purple to-accent-blue text-white text-center px-6 py-3 rounded-lg font-semibold hover:shadow-brand-lg transition-all duration-300 focus:outline-none"
                 >
                   Get Free Consultation
                 </Link>
