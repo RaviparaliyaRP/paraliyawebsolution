@@ -25,9 +25,6 @@
 
 ### **2. CREDIBILITY INDICATORS**
 ```
-✅ Years in Business
-- "Serving since 2022" badge
-- Experience timeline showing growth
 
 ✅ Professional Certifications
 - "Certified in [Technology]"
@@ -38,11 +35,6 @@
 - "Top Rated on Fiverr/Upwork"
 - "5-Star Rated Agency"
 - Industry recognition badges
-
-✅ Media Mentions
-- "As featured in" section
-- Local newspaper articles
-- Blog features (even small ones count)
 
 ✅ Industry Associations
 - "Member of [Web Designer Association]"
@@ -64,10 +56,6 @@
 - Visual timeline for each service
 - Sets clear expectations
 
-✅ Process Transparency
-- Detailed step-by-step breakdown
-- "What happens after you contact us"
-- Behind-the-scenes content
 
 ✅ Team Photos (Real, Not Stock)
 - Actual photos of Ravi & Shreekant
@@ -89,20 +77,6 @@
 - Response time: "Usually replies in 2 hours"
 - Shows active business
 
-✅ Recent Reviews Widget
-- "Latest review: 2 days ago"
-- Real timestamps on testimonials
-- Google Reviews embed
-
-✅ Current Projects Count
-- "5 projects in progress"
-- "3 projects delivered this month"
-- Shows active work
-
-✅ Response Time Badge
-- "⚡ Fast Response: Within 4 hours"
-- Average response time display
-- Sets expectations clearly
 ```
 
 ---
@@ -119,10 +93,6 @@
 - Shows transformation clearly
 - Visual proof of improvement
 
-✅ Case Study Details
-- Actual client names (with permission)
-- Specific metrics: "45% increase in orders"
-- Problem → Solution → Results format
 
 ✅ Project Screenshots/Videos
 - Screen recordings of websites
@@ -133,32 +103,6 @@
 - Short 15-30 sec videos
 - Real faces, real voices
 - Most powerful trust builder
-```
-
----
-
-### **6. CONTACT AUTHENTICITY**
-```
-✅ Multiple Contact Methods
-- WhatsApp Business (verified green tick)
-- Direct phone (not just form)
-- Email address (professional domain)
-- Social media profiles (active)
-
-✅ Response Guarantee
-- "We respond within 4 hours" promise
-- Auto-reply with timeline
-- Shows professionalism
-
-✅ Working Hours Clearly Stated
-- "Mon-Sat: 10 AM - 7 PM"
-- Time zone mention
-- Calendar booking link
-
-✅ WhatsApp Chat Verification
-- Blue/green tick on WhatsApp
-- Business profile complete
-- Quick reply messages set up
 ```
 
 ---
@@ -185,10 +129,6 @@
 - "Secure Payment Gateway"
 - Bank account details (shows legitimacy)
 
-✅ GST Registration (if applicable)
-- "GST Registered Business"
-- GST number display
-- Shows legal business entity
 ```
 
 ---

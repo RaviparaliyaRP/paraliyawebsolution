@@ -436,6 +436,23 @@ const ContactForm = () => {
               </div>
             </Card>
 
+            {/* Google Maps */}
+            <div className="mt-6">
+              <h4 className="text-lg font-semibold mb-3">Find Us</h4>
+              <div className="rounded-lg overflow-hidden shadow-md">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3566.055918422238!2d72.53082747442984!3d23.0769875055706!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1761670420315!5m2!1sen!2sin" 
+                  width="100%" 
+                  height="300" 
+                  style={{ border: 0 }}
+                  allowFullScreen 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Paraliya Web Solution Location"
+                />
+              </div>
+            </div>
+
             {/* Quick Contact */}
             <div className="space-y-3">
               <a
