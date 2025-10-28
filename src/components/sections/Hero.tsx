@@ -104,7 +104,7 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 0.35 }}
               className="flex justify-center lg:justify-start mb-8"
             >
-              <div className="inline-flex items-center space-x-3 bg-white/80 backdrop-blur-sm border border-gray-200 rounded-full px-7 py-5 shadow-sm">
+              <div className="inline-flex items-center space-x-3 bg-white/80 backdrop-blur-sm border border-gray-200 rounded-full px-5 py-3 shadow-sm">
                 <motion.div
                   animate={{ 
                     scale: [1, 1.2, 1],
