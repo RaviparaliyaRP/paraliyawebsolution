@@ -11,7 +11,7 @@ const RecentActivityFeed = () => {
   const messages = [
     {
       icon: '✅',
-      text: 'Ravi just completed a project for Fashion Boutique',
+      text: 'PWS just completed a project for Fashion Boutique',
       time: '2 minutes ago',
     },
     {
