@@ -35,7 +35,7 @@ const AboutContent = () => {
       role: 'Founder & Lead Developer',
       bio: 'Full-stack developer with expertise in modern web technologies. Passionate about creating efficient, user-friendly solutions that help businesses grow.',
       avatar: 'RP',
-      image: '/images/ravi.jpg',
+      image: '/images/team/ravi.jpg',
       social: {
         linkedin: 'https://www.linkedin.com/in/raviparaliyarp',
         github: '#',
@@ -47,7 +47,7 @@ const AboutContent = () => {
       role: 'UI/UX Designer',
       bio: 'Creative designer focused on crafting intuitive and visually appealing user experiences. Skilled in translating ideas into seamless interfaces that balance aesthetics and functionality.',
       avatar: 'SP',
-      image: '/images/shreekant.jpg',
+      image: '/images/team/shreekant.jpg',
       social: {
         linkedin: '#',
         github: '#',

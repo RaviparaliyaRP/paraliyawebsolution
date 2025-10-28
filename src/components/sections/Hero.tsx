@@ -166,7 +166,7 @@ const Hero = () => {
                 className="absolute top-1/4 -left-8 w-16 h-16 bg-white rounded-full shadow-lg p-1"
               >
                 <Image
-                  src="/images/ravi.jpg"
+                  src="/images/team/ravi.jpg"
                   alt="Ravi Paraliya"
                   width={56}
                   height={56}
@@ -180,7 +180,7 @@ const Hero = () => {
                 className="absolute top-3/4 -right-8 w-16 h-16 bg-white rounded-full shadow-lg p-1"
               >
                 <Image
-                  src="/images/shreekant.jpg"
+                  src="/images/team/shreekant.jpg"
                   alt="Shreekant Paraliya"
                   width={56}
                   height={56}

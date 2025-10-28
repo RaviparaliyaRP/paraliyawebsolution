@@ -2,6 +2,7 @@ import Hero from '@/components/sections/Hero';
 import ServicesPreview from '@/components/sections/ServicesPreview';
 import ProcessTimeline from '@/components/sections/ProcessTimeline';
 import Testimonials from '@/components/sections/Testimonials';
+import BrandsCarousel from '@/components/sections/BrandsCarousel';
 import CTASection from '@/components/sections/CTASection';
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <ServicesPreview />
       <ProcessTimeline />
       <Testimonials />
+      <BrandsCarousel />
       <CTASection />
     </>
   );
