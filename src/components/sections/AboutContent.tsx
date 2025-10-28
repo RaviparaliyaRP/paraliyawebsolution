@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Users, Eye, Zap, Headphones, Linkedin, Github, Mail } from 'lucide-react';
 import Image from 'next/image';
 import Card from '@/components/ui/Card';
+import CredentialsSection from '@/components/sections/CredentialsSection';
 
 const AboutContent = () => {
   const reasons = [
@@ -172,6 +173,9 @@ const AboutContent = () => {
           </div>
         </div>
       </section>
+
+      {/* Credentials & Recognition Section */}
+      <CredentialsSection />
 
       {/* Team Section */}
       <section className="py-20 lg:py-24 bg-white">
