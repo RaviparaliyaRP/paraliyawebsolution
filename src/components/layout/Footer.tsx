@@ -58,7 +58,7 @@ const Footer = () => {
             <Link href="/" className="flex items-center space-x-3 mb-4">
               <div className="w-16 h-16">
                 <Image
-                  src="/images/pws/pws-logo.png"
+                  src="/images/pws/footer-logo.png"
                   alt="Paraliya Web Solution Logo"
                   width={64}
                   height={64}
