@@ -97,6 +97,47 @@ const Hero = () => {
               </Link>
             </motion.div>
 
+            {/* Live Project Counter Badge */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.35 }}
+              className="flex justify-center lg:justify-start mb-8"
+            >
+              <div className="inline-flex items-center space-x-3 bg-white/80 backdrop-blur-sm border border-gray-200 rounded-full px-4 py-2 shadow-sm">
+                <motion.div
+                  animate={{ 
+                    scale: [1, 1.2, 1],
+                    opacity: [0.7, 1, 0.7]
+                  }}
+                  transition={{ 
+                    duration: 2, 
+                    repeat: Infinity, 
+                    ease: "easeInOut" 
+                  }}
+                  className="w-2.5 h-2.5 bg-green-500 rounded-full"
+                ></motion.div>
+                <span className="text-sm font-medium text-gray-700">
+                  Currently working on{' '}
+                  <motion.span
+                    key="counter"
+                    animate={{ 
+                      opacity: [1, 0.7, 1] 
+                    }}
+                    transition={{ 
+                      duration: 3, 
+                      repeat: Infinity, 
+                      ease: "easeInOut" 
+                    }}
+                    className="font-semibold text-accent-purple"
+                  >
+                    3
+                  </motion.span>
+                  {' '}active projects
+                </span>
+              </div>
+            </motion.div>
+
             {/* Trust Indicators */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}

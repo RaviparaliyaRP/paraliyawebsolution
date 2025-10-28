@@ -1,0 +1,4 @@
+cd "C:\Users\PARALIYA RAVI\OneDrive\Music\CURSOR AI PROJECTS\pws-portfolio"
+git add .
+git commit -m "all changes"
+git push origin main
