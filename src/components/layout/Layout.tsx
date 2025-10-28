@@ -1,6 +1,7 @@
 import Header from './Header';
 import Footer from './Footer';
 import FloatingActions from './FloatingActions';
+import RecentActivityFeed from '@/components/ui/RecentActivityFeed';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -15,6 +16,7 @@ const Layout = ({ children }: LayoutProps) => {
       </main>
       <Footer />
       <FloatingActions />
+      <RecentActivityFeed />
     </div>
   );
 };
