@@ -21,7 +21,7 @@ const BrandsCarousel = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0 }}
           viewport={{ once: true }}
           className="text-center mb-16"
         >
@@ -54,7 +54,7 @@ const BrandsCarousel = () => {
                 key={`${brand.id}-${index}`}
                 className="flex-shrink-0"
                 whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.2 }}
+                transition={{ duration: 0 }}
               >
                 <div className="w-32 h-20 lg:w-40 lg:h-24 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 p-4 flex items-center justify-center">
                   <Image
@@ -75,7 +75,7 @@ const BrandsCarousel = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
+          transition={{ duration: 0, delay: 0.3 }}
           viewport={{ once: true }}
           className="mt-16 text-center"
         >

@@ -67,7 +67,7 @@ const AboutContent = () => {
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0 }}
             viewport={{ once: true }}
             className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4"
           >
@@ -86,7 +86,7 @@ const AboutContent = () => {
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0 }}
               viewport={{ once: true }}
             >
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-gray-900 mb-6">
@@ -111,7 +111,7 @@ const AboutContent = () => {
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
+              transition={{ duration: 0, delay: 0.2 }}
               viewport={{ once: true }}
               className="relative"
             >
@@ -149,7 +149,7 @@ const AboutContent = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0 }}
             viewport={{ once: true }}
             className="text-center mb-16"
           >
@@ -169,7 +169,7 @@ const AboutContent = () => {
                   key={reason.title}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  transition={{ duration: 0, delay: index * 0.1 }}
                   viewport={{ once: true }}
                 >
                   <Card variant="elevated" hover className="p-8 h-full">
@@ -206,7 +206,7 @@ const AboutContent = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0 }}
             viewport={{ once: true }}
             className="text-center mb-16"
           >
@@ -224,7 +224,7 @@ const AboutContent = () => {
                 key={member.name}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                transition={{ duration: 0, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
                 <Card variant="elevated" hover className="p-8 text-center">

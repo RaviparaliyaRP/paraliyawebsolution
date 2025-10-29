@@ -154,7 +154,7 @@ const ContactForm = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0 }}
           viewport={{ once: true }}
           className="text-center mb-16"
         >
@@ -171,7 +171,7 @@ const ContactForm = () => {
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0 }}
             viewport={{ once: true }}
             className="lg:col-span-2"
           >
@@ -384,7 +384,7 @@ const ContactForm = () => {
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0, delay: 0.2 }}
             viewport={{ once: true }}
             className="space-y-8"
           >

@@ -136,7 +136,7 @@ const PricingCalculator = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0 }}
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-gray-900 mb-4">
@@ -194,7 +194,7 @@ const PricingCalculator = () => {
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3 }}
+                transition={{ duration: 0 }}
               >
                 <Card variant="elevated" className="p-6">
                   <div className="flex items-center space-x-3 mb-6">
@@ -243,7 +243,7 @@ const PricingCalculator = () => {
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3 }}
+                transition={{ duration: 0 }}
               >
                 <Card variant="elevated" className="p-6">
                   <div className="flex items-center space-x-3 mb-6">

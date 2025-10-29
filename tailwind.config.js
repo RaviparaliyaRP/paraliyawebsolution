@@ -24,11 +24,11 @@ module.exports = {
         display: ['Poppins', 'Inter', 'system-ui', 'sans-serif'],
       },
       animation: {
-        'fade-in': 'fadeIn 0.5s ease-in-out',
-        'slide-up': 'slideUp 0.5s ease-out',
-        'slide-down': 'slideDown 0.5s ease-out',
-        'scale-in': 'scaleIn 0.3s ease-out',
-        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'fade-in': 'fadeIn 0s ease-in-out',
+        'slide-up': 'slideUp 0s ease-out',
+        'slide-down': 'slideDown 0s ease-out',
+        'scale-in': 'scaleIn 0s ease-out',
+        'pulse-slow': 'none',
       },
       keyframes: {
         fadeIn: {

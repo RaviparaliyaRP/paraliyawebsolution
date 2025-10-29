@@ -99,7 +99,7 @@ const Hero = () => {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0 }}
               className="mb-6"
             >
               <Badge variant="default" size="md" className="inline-flex items-center space-x-2">
@@ -112,7 +112,7 @@ const Hero = () => {
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
+              transition={{ duration: 0, delay: 0.1 }}
               className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-gray-900 mb-6 leading-tight"
             >
               Transform your business with{' '}
@@ -125,7 +125,7 @@ const Hero = () => {
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
+              transition={{ duration: 0, delay: 0.2 }}
               className="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0"
             >
               We build fast, modern websites that turn visitors into customers. 
@@ -136,7 +136,7 @@ const Hero = () => {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
+              transition={{ duration: 0, delay: 0.3 }}
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12"
             >
               <Link href="/contact">
@@ -155,7 +155,7 @@ const Hero = () => {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.35 }}
+              transition={{ duration: 0, delay: 0.35 }}
               className="flex justify-center lg:justify-start mb-8"
             >
               <div className="inline-flex items-center space-x-3 bg-white/80 backdrop-blur-sm border border-gray-200 rounded-full px-5 py-3 shadow-sm">
@@ -196,7 +196,7 @@ const Hero = () => {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
+              transition={{ duration: 0, delay: 0.4 }}
               className="flex flex-wrap justify-center lg:justify-start gap-6 text-sm text-gray-600"
             >
               <div className="flex items-center space-x-2">
@@ -218,7 +218,7 @@ const Hero = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+              transition={{ duration: 0, delay: 0.2 }}
             className="relative w-full flex items-center justify-center"
           >
             <div className="w-full max-w-lg mx-auto">
@@ -234,7 +234,7 @@ const Hero = () => {
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
+              transition={{ duration: 0, delay: 0.6 }}
           className="mt-20 pt-12 border-t border-gray-200"
         >
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
@@ -245,7 +245,7 @@ const Hero = () => {
                   key={stat.label}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.7 + index * 0.1 }}
+                  transition={{ duration: 0, delay: 0.7 + index * 0.1 }}
                   className="text-center"
                 >
                   <div className="flex justify-center mb-3">

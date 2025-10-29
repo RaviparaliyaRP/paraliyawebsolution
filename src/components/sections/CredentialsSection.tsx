@@ -97,7 +97,7 @@ const CredentialsSection = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0 }}
           viewport={{ once: true }}
           className="text-center mb-16"
         >
@@ -115,7 +115,7 @@ const CredentialsSection = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
+            transition={{ duration: 0, delay: 0.1 }}
             viewport={{ once: true }}
           >
             <Card variant="elevated" className="p-6 h-full">
@@ -167,7 +167,7 @@ const CredentialsSection = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0, delay: 0.2 }}
             viewport={{ once: true }}
           >
             <Card variant="elevated" className="p-6 h-full">
@@ -220,7 +220,7 @@ const CredentialsSection = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
+            transition={{ duration: 0, delay: 0.3 }}
             viewport={{ once: true }}
           >
             <Card variant="elevated" className="p-6 h-full">

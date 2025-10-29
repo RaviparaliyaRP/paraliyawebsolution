@@ -114,7 +114,7 @@ const ServicesDetailed = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0 }}
             viewport={{ once: true }}
             className="text-center mb-16"
           >
@@ -141,7 +141,7 @@ const ServicesDetailed = () => {
               <motion.div
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.1 }}
+                transition={{ duration: 0, delay: index * 0.1 }}
                 viewport={{ once: true }}
                 className={`grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center ${
                   !isEven ? 'lg:grid-flow-col-dense' : ''
@@ -186,7 +186,7 @@ const ServicesDetailed = () => {
                             <motion.div
                               initial={{ width: 0 }}
                               whileInView={{ width: `${phase.progress}%` }}
-                              transition={{ duration: 0.8, delay: idx * 0.2 }}
+                              transition={{ duration: 0, delay: idx * 0.2 }}
                               viewport={{ once: true }}
                               className="h-2 bg-gradient-to-r from-accent-purple to-accent-blue rounded-full"
                             />

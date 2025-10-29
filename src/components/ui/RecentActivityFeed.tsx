@@ -66,7 +66,7 @@ const RecentActivityFeed = () => {
           initial={{ x: -400, opacity: 0 }}
           animate={{ x: 0, opacity: 0.95 }}
           exit={{ x: -400, opacity: 0 }}
-          transition={{ duration: 0.5, ease: 'easeInOut' }}
+          transition={{ duration: 0 }}
           className="fixed bottom-6 left-6 z-50 md:max-w-xs max-w-[280px]"
         >
           <div className="bg-white rounded-xl shadow-2xl p-4 border border-gray-200 relative">
