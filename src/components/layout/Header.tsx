@@ -59,33 +59,33 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation - Centered */}
-          <nav className="hidden lg:flex items-center justify-center flex-1 px-8">
-            <div className="flex items-center space-x-1 lg:space-x-6 xl:space-x-8">
+          <nav className="hidden lg:flex items-center justify-center flex-1 px-4 xl:px-8 min-w-0">
+            <div className="flex items-center space-x-3 xl:space-x-6">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-sm lg:text-base text-gray-700 hover:text-accent-purple font-medium transition-colors duration-200 relative group focus:outline-none px-2 py-1 whitespace-nowrap"
+                  className="text-sm xl:text-base text-gray-700 hover:text-accent-purple font-medium transition-colors duration-200 relative group focus:outline-none px-1.5 xl:px-2 py-1 whitespace-nowrap"
                 >
                   {item.name}
-                  <span className="absolute -bottom-1 left-2 right-2 h-0.5 bg-accent-purple scale-x-0 transition-transform duration-300 group-hover:scale-x-100 origin-center"></span>
+                  <span className="absolute -bottom-1 left-1.5 xl:left-2 right-1.5 xl:right-2 h-0.5 bg-accent-purple scale-x-0 transition-transform duration-300 group-hover:scale-x-100 origin-center"></span>
                 </Link>
               ))}
             </div>
           </nav>
 
           {/* Desktop CTA Section */}
-          <div className="hidden lg:flex items-center space-x-3 xl:space-x-4 flex-shrink-0">
+          <div className="hidden lg:flex items-center space-x-2 xl:space-x-3 flex-shrink-0 min-w-0">
             <a
               href="tel:+919898463251"
-              className="flex items-center space-x-1.5 xl:space-x-2 text-gray-700 hover:text-accent-purple transition-colors duration-200 focus:outline-none group px-2 py-1"
+              className="hidden xl:flex items-center space-x-2 text-gray-700 hover:text-accent-purple transition-colors duration-200 focus:outline-none group px-2 py-1 flex-shrink-0"
             >
               <Phone className="w-4 h-4 flex-shrink-0" />
-              <span className="font-medium text-sm xl:text-base whitespace-nowrap">+91 9898463251</span>
+              <span className="font-medium text-sm whitespace-nowrap">+91 9898463251</span>
             </a>
             <Link
               href="/contact"
-              className="bg-gradient-to-r from-accent-purple to-accent-blue text-white px-4 xl:px-6 py-2 xl:py-2.5 rounded-lg font-semibold text-sm xl:text-base hover:shadow-brand-lg transition-all duration-300 transform hover:scale-105 focus:outline-none whitespace-nowrap"
+              className="bg-gradient-to-r from-accent-purple to-accent-blue text-white px-3 xl:px-5 2xl:px-6 py-2 rounded-lg font-semibold text-xs xl:text-sm 2xl:text-base hover:shadow-brand-lg transition-all duration-300 transform hover:scale-105 focus:outline-none whitespace-nowrap flex-shrink-0"
             >
               Get Free Consultation
             </Link>
