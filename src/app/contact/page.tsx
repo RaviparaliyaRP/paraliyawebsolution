@@ -19,15 +19,6 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="py-16 lg:py-20 bg-gradient-to-br from-white to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Breadcrumb */}
-          <nav className="text-sm text-gray-600 mb-8">
-            <a href="/" className="hover:text-accent-purple transition-colors duration-200">
-              Home
-            </a>
-            <span className="mx-2">›</span>
-            <span className="text-gray-900 font-medium">Contact</span>
-          </nav>
-          
           <div className="text-center">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4">
               Get In Touch
