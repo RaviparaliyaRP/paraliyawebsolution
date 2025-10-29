@@ -9,84 +9,17 @@ import Badge from '@/components/ui/Badge';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 
-// Dynamically import Lottie to avoid SSR issues
-const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
+// Dynamically import DotLottieReact to avoid SSR issues
+const DotLottieReact = dynamic(() => import('@lottiefiles/dotlottie-react').then(mod => mod.DotLottieReact), { ssr: false });
 
 // Hero Lottie Animation Component
 const HeroLottieAnimation = () => {
-  // OPTION 1: Using a public LottieFiles URL
-  // Find free animations at: https://lottiefiles.com/free
-  // Search: "web development", "coding", "website builder"
-  // Copy the URL from the animation page and paste below:
-  const lottieUrl = 'https://assets2.lottiefiles.com/packages/lf20_tfb3estd.json';
-  
-  // OPTION 2: Using a local JSON file
-  // 1. Download JSON from LottieFiles
-  // 2. Save to: /public/lottie/hero-animation.json
-  // 3. Uncomment line below and use animationData instead of URL
-  
-  const [animationData, setAnimationData] = React.useState(null);
-  const [isLoading, setIsLoading] = React.useState(true);
-
-  React.useEffect(() => {
-    // Load animation from URL
-    fetch(lottieUrl)
-      .then(res => {
-        if (!res.ok) throw new Error('Failed to load animation');
-        return res.json();
-      })
-      .then(data => {
-        setAnimationData(data);
-        setIsLoading(false);
-      })
-      .catch(() => {
-        setIsLoading(false);
-      });
-  }, [lottieUrl]);
-
-  // Loading fallback
-  if (isLoading) {
-    return (
-      <div className="w-full h-full flex items-center justify-center">
-        <div className="w-32 h-32 bg-gradient-to-br from-accent-purple/20 to-accent-blue/20 rounded-2xl animate-pulse flex items-center justify-center">
-          <div className="w-16 h-16 bg-gradient-to-br from-accent-purple to-accent-blue rounded-xl"></div>
-        </div>
-      </div>
-    );
-  }
-
-  // Error fallback with logo
-  if (!animationData) {
-    return (
-      <div className="w-full h-full flex items-center justify-center">
-        <div className="relative w-full h-full max-w-[600px]">
-          <div className="absolute inset-0 bg-gradient-to-br from-accent-purple/20 via-accent-blue/20 to-purple-600/20 rounded-3xl"></div>
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="text-center">
-              <div className="w-32 h-32 bg-gradient-to-br from-accent-purple to-accent-blue rounded-2xl mx-auto mb-4 flex items-center justify-center p-4">
-                <Image
-                  src="/images/pws/pws-logo.png"
-                  alt="Paraliya Web Solution"
-                  width={80}
-                  height={80}
-                  className="w-20 h-20 object-contain"
-                />
-              </div>
-              <p className="text-gray-600 text-sm font-medium">Modern Web Solutions</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  // Render Lottie animation
   return (
     <div className="w-full h-full flex items-center justify-center">
-      <Lottie
-        animationData={animationData}
-        loop={true}
-        autoplay={true}
+      <DotLottieReact
+        src="https://lottie.host/68aefee0-3489-4686-9e7f-4da2b41e0bb7/g7BpKVNEgI.json"
+        loop
+        autoplay
         style={{ width: '100%', height: '100%', maxWidth: '600px' }}
       />
     </div>
