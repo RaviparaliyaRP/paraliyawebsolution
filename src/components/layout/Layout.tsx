@@ -1,7 +1,6 @@
 import Header from './Header';
 import Footer from './Footer';
 import FloatingActions from './FloatingActions';
-import RecentActivityFeed from '@/components/ui/RecentActivityFeed';
 import BackToTop from '@/components/ui/BackToTop';
 
 interface LayoutProps {
@@ -19,7 +18,6 @@ const Layout = ({ children }: LayoutProps) => {
       </main>
       <Footer />
       <FloatingActions />
-      <RecentActivityFeed />
       <BackToTop />
     </div>
   );
