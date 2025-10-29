@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Card from '@/components/ui/Card';
 import CredentialsSection from '@/components/sections/CredentialsSection';
 import ComparisonSection from '@/components/sections/ComparisonSection';
+import TechnologyStack from '@/components/sections/TechnologyStack';
 
 const AboutContent = () => {
   const reasons = [
@@ -270,6 +271,9 @@ const AboutContent = () => {
           </div>
         </div>
       </section>
+
+      {/* Technology Stack Section */}
+      <TechnologyStack />
     </div>
   );
 };
