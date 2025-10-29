@@ -19,7 +19,7 @@ const FreeResources = () => {
         'Post-launch actions',
       ],
       fileInfo: 'PDF • 5 pages',
-      downloadLink: '/downloads/Paraliya-Website-Launch-Checklist.pdf',
+      downloadLink: '/api/download?file=Paraliya-Website-Launch-Checklist.pdf',
     },
     {
       icon: Search,
@@ -33,7 +33,7 @@ const FreeResources = () => {
         'Local SEO tactics',
       ],
       fileInfo: 'PDF • 8 pages',
-      downloadLink: '/downloads/Paraliya-SEO-Starter-Guide.pdf',
+      downloadLink: '/api/download?file=Paraliya-SEO-Starter-Guide.pdf',
     },
     {
       icon: Calculator,
@@ -47,7 +47,7 @@ const FreeResources = () => {
         'Hidden costs revealed',
       ],
       fileInfo: 'PDF • 4 pages',
-      downloadLink: '/downloads/Paraliya-Website-Cost-Guide.pdf',
+      downloadLink: '/api/download?file=Paraliya-Website-Cost-Guide.pdf',
     },
   ];
 
@@ -126,20 +126,22 @@ const FreeResources = () => {
                   <p className="text-sm text-gray-500 mb-4">{resource.fileInfo}</p>
 
                   {/* Download Button */}
-                  <a
-                    href={resource.downloadLink}
-                    download
-                    className="block w-full"
+                  <Button
+                    variant="primary"
+                    size="lg"
+                    className="w-full justify-center focus:outline-none"
+                    onClick={() => {
+                      const link = document.createElement('a');
+                      link.href = resource.downloadLink;
+                      link.download = resource.title.replace(/\s+/g, '-') + '.pdf';
+                      document.body.appendChild(link);
+                      link.click();
+                      document.body.removeChild(link);
+                    }}
                   >
-                    <Button
-                      variant="primary"
-                      size="lg"
-                      className="w-full justify-center focus:outline-none"
-                    >
-                      <Download className="w-4 h-4 mr-2" />
-                      Download Free
-                    </Button>
-                  </a>
+                    <Download className="w-4 h-4 mr-2" />
+                    Download Free
+                  </Button>
                 </Card>
               </motion.div>
             );
