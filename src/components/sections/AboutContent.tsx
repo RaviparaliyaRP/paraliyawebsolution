@@ -5,6 +5,7 @@ import { Users, Eye, Zap, Headphones, Linkedin, Github, Mail } from 'lucide-reac
 import Image from 'next/image';
 import Card from '@/components/ui/Card';
 import CredentialsSection from '@/components/sections/CredentialsSection';
+import ComparisonSection from '@/components/sections/ComparisonSection';
 
 const AboutContent = () => {
   const reasons = [
@@ -173,6 +174,9 @@ const AboutContent = () => {
           </div>
         </div>
       </section>
+
+      {/* Comparison Section */}
+      <ComparisonSection />
 
       {/* Credentials & Recognition Section */}
       <CredentialsSection />
