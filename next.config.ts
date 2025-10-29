@@ -18,8 +18,7 @@ const nextConfig: NextConfig = {
   compress: true,
   // Production source maps disabled for smaller bundle
   productionBrowserSourceMaps: false,
-  // Optimize bundles
-  swcMinify: true,
+  // Note: swcMinify is enabled by default in Next.js 16+
   // Power optimizations
   poweredByHeader: false,
   // Optimize package imports (tree shaking)
