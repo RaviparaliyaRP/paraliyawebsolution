@@ -41,25 +41,26 @@ const Header = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
-            {/* LEFT SIDE: Phone + CTA Button */}
-            <div className="hidden lg:flex items-center gap-4 flex-shrink-0">
-              {/* Phone Number */}
-              <a
-                href="tel:+919898463251"
-                className="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-all duration-300 text-sm group"
-              >
-                <Phone className="w-4 h-4 transition-transform duration-300 group-hover:scale-110" />
-                <span className="font-medium whitespace-nowrap">+91 9898463251</span>
-              </a>
-
-              {/* Primary CTA Button */}
-              <Link
-                href="/contact"
-                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-5 py-2.5 rounded-lg font-semibold text-sm shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 transform flex items-center justify-center whitespace-nowrap"
-              >
-                Get Free Consultation
-              </Link>
-            </div>
+            {/* LEFT SIDE: Logo + Company Name */}
+            <Link
+              href="/"
+              className="flex items-center gap-3 group flex-shrink-0"
+            >
+              <div className="relative w-10 h-10 flex-shrink-0 flex items-center justify-center transition-transform duration-300 group-hover:scale-105 group-hover:rotate-3">
+                <Image
+                  src="/images/pws/pws-logo.png"
+                  alt="Paraliya Web Solution Logo"
+                  width={40}
+                  height={40}
+                  priority
+                  fetchPriority="high"
+                  className="w-full h-full object-contain transition-transform duration-300"
+                />
+              </div>
+              <span className="hidden sm:block text-base lg:text-lg font-semibold text-gray-900 whitespace-nowrap tracking-tight">
+                Paraliya Web Solution
+              </span>
+            </Link>
 
             {/* CENTER: Navigation Links */}
             <nav className="hidden lg:flex items-center justify-center flex-1 px-8">
@@ -86,26 +87,25 @@ const Header = () => {
               </div>
             </nav>
 
-            {/* RIGHT SIDE: Company Name + Logo */}
-            <Link
-              href="/"
-              className="flex items-center gap-3 group flex-shrink-0"
-            >
-              <span className="hidden sm:block text-base lg:text-lg font-semibold text-gray-900 whitespace-nowrap tracking-tight">
-                Paraliya Web Solution
-              </span>
-              <div className="relative w-10 h-10 flex-shrink-0 flex items-center justify-center transition-transform duration-300 group-hover:scale-105 group-hover:rotate-3">
-                <Image
-                  src="/images/pws/pws-logo.png"
-                  alt="Paraliya Web Solution Logo"
-                  width={40}
-                  height={40}
-                  priority
-                  fetchPriority="high"
-                  className="w-full h-full object-contain transition-transform duration-300"
-                />
-              </div>
-            </Link>
+            {/* RIGHT SIDE: Phone + CTA Button */}
+            <div className="hidden lg:flex items-center gap-4 flex-shrink-0">
+              {/* Phone Number */}
+              <a
+                href="tel:+919898463251"
+                className="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-all duration-300 text-sm group"
+              >
+                <Phone className="w-4 h-4 transition-transform duration-300 group-hover:scale-110" />
+                <span className="font-medium whitespace-nowrap">+91 9898463251</span>
+              </a>
+
+              {/* Primary CTA Button */}
+              <Link
+                href="/contact"
+                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-5 py-2.5 rounded-lg font-semibold text-sm shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 transform flex items-center justify-center whitespace-nowrap"
+              >
+                Get Free Consultation
+              </Link>
+            </div>
 
             {/* MOBILE: Hamburger Menu Button */}
             <button

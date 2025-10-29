@@ -1,5 +1,9 @@
 import PricingCalculator from '@/components/sections/PricingCalculator';
 
 export default function GetQuotePage() {
-  return <PricingCalculator />;
+  return (
+    <div>
+      <PricingCalculator />
+    </div>
+  );
 }

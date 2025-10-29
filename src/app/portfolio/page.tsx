@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function PortfolioPage() {
   return (
-    <div className="pt-8">
+    <div>
       <PortfolioShowcase />
     </div>
   );
