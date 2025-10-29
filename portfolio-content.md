@@ -892,7 +892,7 @@ Our Services
 (Format: Extra large, bold, centered, 48-56px)
 
 [Description - Paragraph]
-Comprehensive web development solutions designed to help your business thrive online. From simple websites to complex applications, we've got you covered.
+Modern websites built for growth and performance. 
 (Format: Medium, 18-20px, gray, centered, max-width 600-700px)
 ```
 

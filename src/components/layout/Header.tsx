@@ -46,6 +46,8 @@ const Header = () => {
                 alt="Paraliya Web Solution Logo"
                 width={64}
                 height={64}
+                priority
+                fetchPriority="high"
                 className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
               />
             </div>

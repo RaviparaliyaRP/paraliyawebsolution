@@ -8,19 +8,53 @@ import Badge from '@/components/ui/Badge';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 
-// Dynamically import DotLottieReact to avoid SSR issues
-const DotLottieReact = dynamic(() => import('@lottiefiles/dotlottie-react').then(mod => mod.DotLottieReact), { ssr: false });
+// Dynamically import DotLottieReact to avoid SSR issues and improve initial load
+const DotLottieReact = dynamic(
+  () => import('@lottiefiles/dotlottie-react').then(mod => mod.DotLottieReact), 
+  { 
+    ssr: false,
+    loading: () => (
+      <div className="w-full h-full flex items-center justify-center">
+        <div className="w-full h-[300px] sm:h-[400px] lg:h-[500px] bg-gradient-to-br from-accent-purple/10 to-accent-blue/10 rounded-2xl animate-pulse" />
+      </div>
+    )
+  }
+);
 
-// Hero Lottie Animation Component
+// Hero Lottie Animation Component - Lazy loaded when in viewport
 const HeroLottieAnimation = () => {
+  const [isInView, setIsInView] = React.useState(false);
+  const containerRef = React.useRef<HTMLDivElement>(null);
+
+  React.useEffect(() => {
+    if (!containerRef.current) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsInView(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    observer.observe(containerRef.current);
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div className="w-full h-full flex items-center justify-center">
-      <DotLottieReact
-        src="https://lottie.host/68aefee0-3489-4686-9e7f-4da2b41e0bb7/g7BpKVNEgI.json"
-        loop
-        autoplay
-        style={{ width: '100%', height: '100%', maxWidth: '600px' }}
-      />
+    <div ref={containerRef} className="w-full h-full flex items-center justify-center">
+      {isInView ? (
+        <DotLottieReact
+          src="https://lottie.host/68aefee0-3489-4686-9e7f-4da2b41e0bb7/g7BpKVNEgI.json"
+          loop
+          autoplay
+          style={{ width: '100%', height: '100%', maxWidth: '600px' }}
+        />
+      ) : (
+        <div className="w-full h-[300px] sm:h-[400px] lg:h-[500px] bg-gradient-to-br from-accent-purple/10 to-accent-blue/10 rounded-2xl animate-pulse" />
+      )}
     </div>
   );
 };
