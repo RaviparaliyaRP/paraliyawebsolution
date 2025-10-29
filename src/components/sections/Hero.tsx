@@ -1,11 +1,97 @@
 'use client';
 
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Star, CheckCircle, Clock, Heart } from 'lucide-react';
 import Image from 'next/image';
 import Button from '@/components/ui/Button';
 import Badge from '@/components/ui/Badge';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
+
+// Dynamically import Lottie to avoid SSR issues
+const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
+
+// Hero Lottie Animation Component
+const HeroLottieAnimation = () => {
+  // OPTION 1: Using a public LottieFiles URL
+  // Find free animations at: https://lottiefiles.com/free
+  // Search: "web development", "coding", "website builder"
+  // Copy the URL from the animation page and paste below:
+  const lottieUrl = 'https://lottie.host/embed/8a0d0f5f-5c4a-4e3a-9b8c-7d6e5f4a3b2c/X8QK9YQKqJ.json';
+  
+  // OPTION 2: Using a local JSON file
+  // 1. Download JSON from LottieFiles
+  // 2. Save to: /public/lottie/hero-animation.json
+  // 3. Uncomment line below and use animationData instead of URL
+  
+  const [animationData, setAnimationData] = React.useState(null);
+  const [isLoading, setIsLoading] = React.useState(true);
+
+  React.useEffect(() => {
+    // Load animation from URL
+    fetch(lottieUrl)
+      .then(res => {
+        if (!res.ok) throw new Error('Failed to load animation');
+        return res.json();
+      })
+      .then(data => {
+        setAnimationData(data);
+        setIsLoading(false);
+      })
+      .catch(() => {
+        setIsLoading(false);
+      });
+  }, [lottieUrl]);
+
+  // Loading fallback
+  if (isLoading) {
+    return (
+      <div className="w-full h-full flex items-center justify-center">
+        <div className="w-32 h-32 bg-gradient-to-br from-accent-purple/20 to-accent-blue/20 rounded-2xl animate-pulse flex items-center justify-center">
+          <div className="w-16 h-16 bg-gradient-to-br from-accent-purple to-accent-blue rounded-xl"></div>
+        </div>
+      </div>
+    );
+  }
+
+  // Error fallback with logo
+  if (!animationData) {
+    return (
+      <div className="w-full h-full flex items-center justify-center">
+        <div className="relative w-full h-full max-w-[600px]">
+          <div className="absolute inset-0 bg-gradient-to-br from-accent-purple/20 via-accent-blue/20 to-purple-600/20 rounded-3xl"></div>
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-center">
+              <div className="w-32 h-32 bg-gradient-to-br from-accent-purple to-accent-blue rounded-2xl mx-auto mb-4 flex items-center justify-center p-4">
+                <Image
+                  src="/images/pws/pws-logo.png"
+                  alt="Paraliya Web Solution"
+                  width={80}
+                  height={80}
+                  className="w-20 h-20 object-contain"
+                />
+              </div>
+              <p className="text-gray-600 text-sm font-medium">Modern Web Solutions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Render Lottie animation
+  return (
+    <div className="w-full h-full flex items-center justify-center">
+      <Lottie
+        animationData={animationData}
+        loop={true}
+        autoplay={true}
+        style={{ width: '100%', height: '100%', maxWidth: '600px' }}
+      />
+    </div>
+  );
+};
 
 const Hero = () => {
   const trustStats = [
@@ -160,57 +246,24 @@ const Hero = () => {
             </motion.div>
           </div>
 
-          {/* Right Side - Visual Element */}
+          {/* Right Side - Lottie Animation */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative"
+            className="relative w-full flex items-center justify-center"
           >
-            <div className="relative w-full max-w-lg mx-auto">
-              {/* Main Visual - Abstract Gradient Shape */}
-              <div className="relative w-full h-96 lg:h-[500px]">
-                <div className="absolute inset-0 bg-gradient-to-br from-accent-purple via-accent-blue to-purple-600 rounded-3xl transform rotate-6 opacity-20"></div>
-                <div className="absolute inset-0 bg-gradient-to-br from-accent-blue via-accent-purple to-blue-600 rounded-3xl transform -rotate-6 opacity-30"></div>
-                <div className="absolute inset-4 bg-gradient-to-br from-accent-purple to-accent-blue rounded-3xl flex items-center justify-center">
-                  <div className="text-center text-white p-8">
-                    <div className="w-28 h-28 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4 backdrop-blur-sm p-4">
-                      <Image
-                        src="/images/pws/pws-logo.png"
-                        alt="Paraliya Web Solution Logo"
-                        width={80}
-                        height={80}
-                        className="w-full h-full object-contain"
-                      />
-                    </div>
-                    <h3 className="text-xl font-semibold mb-2">Modern Web Solutions</h3>
-                    <p className="text-white/80">Built for Performance & Growth</p>
-                  </div>
-                </div>
+            <div className="w-full max-w-lg mx-auto">
+              {/* Lottie Animation Container */}
+              <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[500px] flex items-center justify-center">
+                <HeroLottieAnimation />
               </div>
-
-              {/* Floating Elements */}
-              <motion.div
-                animate={{ y: [-10, 10, -10] }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -top-4 -right-4 w-16 h-16 bg-white rounded-xl shadow-lg flex items-center justify-center"
-              >
-                <Star className="w-8 h-8 text-yellow-500 fill-current" />
-              </motion.div>
-
-              <motion.div
-                animate={{ y: [10, -10, 10] }}
-                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -bottom-4 -left-4 w-20 h-20 bg-white rounded-xl shadow-lg flex items-center justify-center"
-              >
-                <CheckCircle className="w-10 h-10 text-green-500" />
-              </motion.div>
 
               {/* Team Photos as Floating Elements */}
               <motion.div
                 animate={{ y: [-5, 5, -5] }}
                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute top-1/4 -left-8 w-16 h-16 bg-white rounded-full shadow-lg p-1"
+                className="absolute top-1/4 -left-4 sm:-left-8 w-12 h-12 sm:w-16 sm:h-16 bg-white rounded-full shadow-lg p-1"
               >
                 <Image
                   src="/images/team/ravi.jpg"
@@ -224,7 +277,7 @@ const Hero = () => {
               <motion.div
                 animate={{ y: [5, -5, 5] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute top-3/4 -right-8 w-16 h-16 bg-white rounded-full shadow-lg p-1"
+                className="absolute top-3/4 -right-4 sm:-right-8 w-12 h-12 sm:w-16 sm:h-16 bg-white rounded-full shadow-lg p-1"
               >
                 <Image
                   src="/images/team/shreekant.jpg"
