@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import ContactForm from '@/components/sections/ContactForm';
+import LiveChatStatus from '@/components/ui/LiveChatStatus';
 
 export const metadata: Metadata = {
   title: 'Contact Us - Paraliya Web Solution | Get Free Consultation',
@@ -24,6 +25,11 @@ export default function ContactPage() {
           <span className="mx-2">›</span>
           <span className="text-gray-900 font-medium">Contact</span>
         </nav>
+      </div>
+
+      {/* Live Chat Availability Status */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <LiveChatStatus />
       </div>
 
       <ContactForm />
