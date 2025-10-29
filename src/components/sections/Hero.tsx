@@ -3,7 +3,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Star, CheckCircle, Clock, Heart } from 'lucide-react';
-import Image from 'next/image';
 import Button from '@/components/ui/Button';
 import Badge from '@/components/ui/Badge';
 import Link from 'next/link';
@@ -83,7 +82,7 @@ const Hero = () => {
               className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-gray-900 mb-6 leading-tight"
             >
               Transform Your Business with{' '}
-              <span className="text-gradient">Paraliya Web Solutions - PWS</span>
+              <span className="text-gradient"></span>
             </motion.h1>
 
             {/* Subheading */}
@@ -191,35 +190,6 @@ const Hero = () => {
               <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[500px] flex items-center justify-center">
                 <HeroLottieAnimation />
               </div>
-
-              {/* Team Photos as Floating Elements */}
-              <motion.div
-                animate={{ y: [-5, 5, -5] }}
-                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute top-1/4 -left-4 sm:-left-8 w-12 h-12 sm:w-16 sm:h-16 bg-white rounded-full shadow-lg p-1"
-              >
-                <Image
-                  src="/images/team/ravi.jpg"
-                  alt="Ravi Paraliya"
-                  width={56}
-                  height={56}
-                  className="w-full h-full object-cover rounded-full"
-                />
-              </motion.div>
-
-              <motion.div
-                animate={{ y: [5, -5, 5] }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute top-3/4 -right-4 sm:-right-8 w-12 h-12 sm:w-16 sm:h-16 bg-white rounded-full shadow-lg p-1"
-              >
-                <Image
-                  src="/images/team/shreekant.jpg"
-                  alt="Shreekant Paraliya"
-                  width={56}
-                  height={56}
-                  className="w-full h-full object-cover rounded-full"
-                />
-              </motion.div>
             </div>
           </motion.div>
         </div>
