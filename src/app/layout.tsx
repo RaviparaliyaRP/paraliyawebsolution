@@ -18,7 +18,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Paraliya Web Solution - Professional Web Development Services in Ahmedabad",
-  description: "Transform your business with custom web solutions. We build fast, modern websites that turn visitors into customers. Trusted by 50+ businesses across India.",
+  description: "Transform your business with paraliya web solutions. We build fast, modern websites that turn visitors into customers. Trusted by 50+ businesses across India.",
   keywords: "web development, website design, e-commerce, custom applications, Shayona Darshan 49, Near Vaibhav Orthopadic Hospital Chanakyapuri, Ahmedabad - 380061",
   authors: [{ name: "Paraliya Web Solution" }],
   creator: "Paraliya Web Solution",
@@ -28,13 +28,13 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: "https://paraliyawebsolution.com",
     title: "Paraliya Web Solution - Professional Web Development Services",
-    description: "Transform your business with custom web solutions. We build fast, modern websites that turn visitors into customers.",
+    description: "Transform your business with paraliya web solutions. We build fast, modern websites that turn visitors into customers.",
     siteName: "Paraliya Web Solution",
   },
   twitter: {
     card: "summary_large_image",
     title: "Paraliya Web Solution - Professional Web Development Services",
-    description: "Transform your business with custom web solutions. We build fast, modern websites that turn visitors into customers.",
+    description: "Transform your business with paraliya web solutions. We build fast, modern websites that turn visitors into customers.",
     creator: "@RaviParaliya14",
   },
   robots: {

@@ -83,7 +83,7 @@ const Hero = () => {
               className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-gray-900 mb-6 leading-tight"
             >
               Transform Your Business with{' '}
-              <span className="text-gradient">Custom Web Solutions</span>
+              <span className="text-gradient">Paraliya Web Solutions</span>
             </motion.h1>
 
             {/* Subheading */}

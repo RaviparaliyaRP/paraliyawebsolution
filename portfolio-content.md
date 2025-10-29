@@ -3,7 +3,7 @@
 ## 🏠 HOME PAGE
 
 ### Hero Section
-**Headline:** Transform Your Business with Custom Web Solutions  
+**Headline:** Transform Your Business with Paraliya Web Solutions  
 **Subheadline:** We build fast, modern websites that turn visitors into customers. Trusted by 50+ businesses across India.
 
 **Primary CTA:** Get Free Consultation  
@@ -340,7 +340,7 @@ LEFT SIDE:
 (Format: Badge with star icon, light background, small text)
 
 [Main Heading - H1]
-Transform Your Business with Custom Web Solutions
+Transform Your Business with Paraliya Web Solutions
 (Format: Extra large, bold, 48-56px, gradient text or solid dark)
 
 [Subheading - H2] 
