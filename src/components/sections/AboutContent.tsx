@@ -60,7 +60,25 @@ const AboutContent = () => {
   ];
 
   return (
-    <div className="space-y-20 lg:space-y-24">
+    <div className="space-y-0">
+      {/* Hero Section */}
+      <section className="py-20 lg:py-24 bg-gradient-to-br from-white to-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4"
+          >
+            About Paraliya Web Solution
+          </motion.h1>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Building digital solutions since 2022
+          </p>
+        </div>
+      </section>
+
       {/* Company Story */}
       <section className="py-20 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

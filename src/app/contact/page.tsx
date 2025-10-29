@@ -16,20 +16,34 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <div className="pt-8">
-      {/* Breadcrumb */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <nav className="text-sm text-gray-600">
-          <a href="/" className="hover:text-accent-purple transition-colors duration-200">
-            Home
-          </a>
-          <span className="mx-2">›</span>
-          <span className="text-gray-900 font-medium">Contact</span>
-        </nav>
-      </div>
+      {/* Hero Section */}
+      <section className="py-16 lg:py-20 bg-gradient-to-br from-white to-blue-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Breadcrumb */}
+          <nav className="text-sm text-gray-600 mb-8">
+            <a href="/" className="hover:text-accent-purple transition-colors duration-200">
+              Home
+            </a>
+            <span className="mx-2">›</span>
+            <span className="text-gray-900 font-medium">Contact</span>
+          </nav>
+          
+          <div className="text-center">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4">
+              Get In Touch
+            </h1>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Let's discuss your project and bring your ideas to life
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* Live Chat Availability Status */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <LiveChatStatus />
+      <div className="bg-blue-50 py-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <LiveChatStatus />
+        </div>
       </div>
 
       <ContactForm />

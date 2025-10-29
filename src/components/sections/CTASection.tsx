@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const CTASection = () => {
   return (
-    <section className="py-20 lg:py-24 bg-gradient-to-br from-accent-purple via-accent-blue to-purple-600 relative overflow-hidden">
+    <section className="py-20 lg:py-24 bg-gradient-to-r from-blue-600 to-purple-600 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-72 h-72 bg-white rounded-full -translate-x-1/2 -translate-y-1/2"></div>

@@ -107,35 +107,38 @@ const ServicesDetailed = () => {
   ];
 
   return (
-    <section className="py-20 lg:py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-gray-900 mb-4">
-            Our Services
-          </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Comprehensive web development solutions designed to help your business thrive online. 
-            From simple websites to complex applications, we've got you covered.
-          </p>
-        </motion.div>
+    <div className="space-y-0">
+      {/* Hero Section */}
+      <section className="py-20 lg:py-24 bg-gradient-to-br from-white to-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4">
+              Our Services
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Comprehensive web development solutions designed to help your business thrive online. 
+              From simple websites to complex applications, we've got you covered.
+            </p>
+          </motion.div>
+        </div>
+      </section>
 
-        {/* Services */}
-        <div className="space-y-20">
-          {services.map((service, index) => {
+      {/* Services */}
+      {services.map((service, index) => {
             const Icon = service.icon;
             const isEven = index % 2 === 0;
+            const bgClass = index === 0 ? 'bg-white' : index === 1 ? 'bg-blue-50' : 'bg-white';
             
             return (
+              <section key={service.id} id={service.id} className={`py-20 lg:py-24 ${bgClass}`}>
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <motion.div
-                key={service.id}
-                id={service.id}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: index * 0.1 }}
@@ -270,33 +273,37 @@ const ServicesDetailed = () => {
                   </Card>
                 </div>
               </motion.div>
+                </div>
+              </section>
             );
           })}
-        </div>
 
-        {/* Bottom CTA */}
+      {/* Bottom CTA */}
+      <section className="py-20 lg:py-24 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
-          className="text-center mt-20 pt-16 border-t border-gray-200"
+          className="text-center"
         >
-          <h3 className="text-2xl sm:text-3xl font-display font-bold text-gray-900 mb-4">
+          <h3 className="text-2xl sm:text-3xl font-display font-bold mb-4">
             Not Sure Which Service You Need?
           </h3>
-          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
             Let's discuss your requirements and find the perfect solution for your business.
           </p>
           <Link href="/contact">
-            <Button size="lg" className="group">
+            <Button size="lg" className="group bg-white text-blue-600 hover:bg-gray-50">
               Schedule Free Consultation
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-200" />
             </Button>
           </Link>
         </motion.div>
-      </div>
-    </section>
+        </div>
+      </section>
+    </div>
   );
 };
 
