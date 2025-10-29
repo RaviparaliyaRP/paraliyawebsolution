@@ -62,18 +62,41 @@ const AboutContent = () => {
   return (
     <div className="space-y-0">
       {/* Hero Section */}
-      <section className="py-20 lg:py-24 bg-gradient-to-br from-white to-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative py-20 lg:py-24 bg-gradient-to-r from-accent-purple via-accent-blue to-purple-600 overflow-hidden">
+        {/* Premium Background Patterns */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          {/* Large Circular Shapes */}
+          <div className="absolute -top-20 -left-20 w-96 h-96 bg-blue-400/30 rounded-full blur-3xl"></div>
+          <div className="absolute -bottom-20 -right-20 w-[32rem] h-[32rem] bg-purple-400/30 rounded-full blur-3xl"></div>
+          
+          {/* Additional floating shapes */}
+          <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-white/10 rounded-full blur-2xl"></div>
+          <div className="absolute bottom-1/4 right-1/3 w-80 h-80 bg-blue-300/20 rounded-full blur-3xl"></div>
+          
+          {/* Mesh Pattern Overlay */}
+          <div 
+            className="absolute inset-0 opacity-30"
+            style={{
+              backgroundImage: `
+                radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%)
+              `
+            }}
+          ></div>
+        </div>
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4"
+            className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-white mb-4 drop-shadow-lg"
           >
             About Paraliya Web Solution
           </motion.h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-white/90 max-w-2xl mx-auto">
             Building digital solutions since 2022
           </p>
         </div>
