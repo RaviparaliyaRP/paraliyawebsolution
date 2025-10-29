@@ -133,7 +133,7 @@ const FreeResources = () => {
                   >
                     <Button
                       variant="primary"
-                      size="large"
+                      size="lg"
                       className="w-full justify-center focus:outline-none"
                     >
                       <Download className="w-4 h-4 mr-2" />
