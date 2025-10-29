@@ -18,7 +18,7 @@ const HeroLottieAnimation = () => {
   // Find free animations at: https://lottiefiles.com/free
   // Search: "web development", "coding", "website builder"
   // Copy the URL from the animation page and paste below:
-  const lottieUrl = 'https://lottie.host/embed/8a0d0f5f-5c4a-4e3a-9b8c-7d6e5f4a3b2c/X8QK9YQKqJ.json';
+  const lottieUrl = 'https://assets2.lottiefiles.com/packages/lf20_tfb3estd.json';
   
   // OPTION 2: Using a local JSON file
   // 1. Download JSON from LottieFiles

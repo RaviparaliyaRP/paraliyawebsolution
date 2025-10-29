@@ -18,7 +18,7 @@ This folder contains Lottie animation JSON files for the website.
 5. Click on the animation → Copy the URL
 6. Update `src/components/sections/Hero.tsx`:
    ```jsx
-   const lottieUrl = 'YOUR_LOTTIE_URL_HERE';
+   const lottieUrl = 'https://assets2.lottiefiles.com/packages/lf20_tfb3estd.json';
    ```
 
 ### Option 2: Using Local JSON File
