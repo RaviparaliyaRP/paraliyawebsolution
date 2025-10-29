@@ -46,6 +46,25 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Typography scale and defaults */
+@layer base {
+  h1 {
+    @apply font-bold text-gray-900 leading-tight text-4xl sm:text-5xl lg:text-6xl;
+  }
+  h2 {
+    @apply font-bold text-gray-900 leading-snug text-3xl sm:text-4xl lg:text-5xl;
+  }
+  h3 {
+    @apply font-semibold text-gray-900 leading-snug text-2xl sm:text-3xl;
+  }
+  p, li {
+    @apply text-gray-700 leading-relaxed text-base sm:text-lg;
+  }
+  small {
+    @apply text-gray-500;
+  }
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
@@ -99,4 +118,20 @@ body {
 
 .shadow-brand-lg {
   box-shadow: 0 20px 25px -5px rgba(99, 102, 241, 0.1), 0 10px 10px -5px rgba(99, 102, 241, 0.04);
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  left: 8px;
+  top: -48px;
+  background: #111827;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  z-index: 1000;
+  transition: top 0.2s ease;
+}
+.skip-link:focus {
+  top: 8px;
 }
