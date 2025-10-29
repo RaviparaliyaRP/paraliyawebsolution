@@ -81,8 +81,10 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-gray-900 mb-6 leading-tight"
             >
-              Transform Your Business with{' '}
-              <span className="text-gradient"></span>
+              Transform your business with{' '}
+              <span className="bg-gradient-to-r from-accent-purple to-accent-blue bg-clip-text text-transparent">
+                Paraliya Web Solution - PWS
+              </span>
             </motion.h1>
 
             {/* Subheading */}
