@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, MessageCircle, Loader2 } from 'lucide-react';
+import { Mail, Phone, MapPin, MessageCircle, Loader2, MessageSquare, Shield, Palette } from 'lucide-react';
 import Card from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
 
@@ -442,6 +442,58 @@ const ContactForm = () => {
                   <span className="text-gray-600">Closed</span>
                 </div>
               </div>
+            </Card>
+
+            {/* Our Commitment to You - Guarantees */}
+            <Card variant="elevated" className="p-6 bg-blue-50 border-blue-200">
+              <h3 className="text-xl font-display font-bold text-gray-900 mb-6">
+                Our Commitment to You
+              </h3>
+              <div className="space-y-4">
+                {/* Guarantee 1: Free Consultation */}
+                <div className="flex items-start gap-3">
+                  <MessageSquare className="w-6 h-6 text-blue-500 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <h4 className="font-bold text-gray-900 text-base mb-1">
+                      Free Consultation
+                    </h4>
+                    <p className="text-sm text-gray-600 leading-relaxed">
+                      No-obligation consultation. Discuss your project with no pressure to buy.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Guarantee 2: 100% Satisfaction */}
+                <div className="flex items-start gap-3">
+                  <Shield className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <h4 className="font-bold text-gray-900 text-base mb-1">
+                      100% Satisfaction Guarantee
+                    </h4>
+                    <p className="text-sm text-gray-600 leading-relaxed">
+                      We'll work until you're happy. Or get your money back*
+                    </p>
+                  </div>
+                </div>
+
+                {/* Guarantee 3: Free Initial Mockup */}
+                <div className="flex items-start gap-3">
+                  <Palette className="w-6 h-6 text-purple-500 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <h4 className="font-bold text-gray-900 text-base mb-1">
+                      Free Initial Mockup
+                    </h4>
+                    <p className="text-sm text-gray-600 leading-relaxed">
+                      See our design approach before you pay. Risk-free way to evaluate our work.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Footer note */}
+              <p className="text-xs text-gray-500 italic mt-4">
+                *Terms apply - see refund policy
+              </p>
             </Card>
 
             {/* Google Maps */}
