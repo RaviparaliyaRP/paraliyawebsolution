@@ -35,9 +35,9 @@ const FloatingActions = () => {
         whileTap={{ scale: 0.95 }}
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0, delay: 0 }}
+        transition={{ delay: 0.5 }}
       >
-        <div className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-none animate-pulse-slow">
+        <div className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse-slow">
           <MessageCircle className="w-7 h-7 text-white" />
         </div>
         
@@ -58,7 +58,7 @@ const FloatingActions = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.7 }}
       >
-        <div className="w-14 h-14 bg-accent-blue rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-none">
+        <div className="w-14 h-14 bg-accent-blue rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300">
           <Phone className="w-6 h-6 text-white" />
         </div>
         
@@ -80,9 +80,9 @@ const FloatingActions = () => {
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 100 }}
-            transition={{ duration: 0 }}
+            transition={{ duration: 0.3 }}
           >
-            <div className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-none hover:bg-accent-purple">
+            <div className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-accent-purple">
               <ChevronUp className="w-5 h-5 text-white" />
             </div>
             

@@ -107,7 +107,7 @@ const Header = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0 }}
+            transition={{ duration: 0.3 }}
             className="lg:hidden bg-white border-t border-gray-200 shadow-lg"
           >
             <div className="px-4 py-6 space-y-4">

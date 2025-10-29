@@ -180,7 +180,7 @@ Website security is an ongoing process, not a one-time setup. By implementing th
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0 }}
+          transition={{ duration: 0.6 }}
           viewport={{ once: true }}
           className="text-center mb-16"
         >
@@ -196,7 +196,7 @@ Website security is an ongoing process, not a one-time setup. By implementing th
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0, delay: 0.1 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
           viewport={{ once: true }}
           className="flex flex-wrap justify-center gap-3 mb-12"
         >
@@ -217,7 +217,7 @@ Website security is an ongoing process, not a one-time setup. By implementing th
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0, delay: 0.2 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
             className="mb-16"
           >
@@ -307,7 +307,7 @@ Website security is an ongoing process, not a one-time setup. By implementing th
               key={post.id}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0, delay: index * 0.1 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
               <Card variant="elevated" hover className="h-full">
@@ -374,7 +374,7 @@ Website security is an ongoing process, not a one-time setup. By implementing th
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0, delay: 0.4 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
           className="text-center mt-12"
         >
