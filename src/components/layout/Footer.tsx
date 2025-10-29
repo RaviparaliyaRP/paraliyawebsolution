@@ -154,7 +154,7 @@ const Footer = () => {
               <li className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-accent-purple mt-0.5 flex-shrink-0" />
                 <span className="text-gray-400 text-sm">
-                  Ahmedabad, Gujarat, India
+                  Shayona Darshan 49, Near Vaibhav Orthopadic Hospital Chanakyapuri, Ahmedabad - 380061
                 </span>
               </li>
             </ul>

@@ -144,7 +144,7 @@ We ensure smooth deployment and provide ongoing maintenance support.
 
 ### Contact Information
 **Address:** [Your Office Address]  
-Ahmedabad, Gujarat, India
+Shayona Darshan 49, Near Vaibhav Orthopadic Hospital Chanakyapuri, Ahmedabad - 380061
 
 **Email:** paraliyaravi80@gmail.com  
 **Phone:** +91 [9898463251]  
@@ -855,7 +855,7 @@ Contact
 [Contact Items - Icon + Text]
 [Icon: Mail] paraliyaravi80@gmail.com
 [Icon: Phone] +91 9898463251
-[Icon: MapPin] Ahmedabad, Gujarat, India
+[Icon: MapPin] Shayona Darshan 49, Near Vaibhav Orthopadic Hospital Chanakyapuri, Ahmedabad - 380061
 (Format: Small icon + text, vertical list, clickable where applicable)
 
 
@@ -1343,7 +1343,7 @@ paraliyaravi80@gmail.com
 [Item 4]
 [Icon: MapPin]
 [Label: Address]
-Ahmedabad, Gujarat, India
+Shayona Darshan 49, Near Vaibhav Orthopadic Hospital Chanakyapuri, Ahmedabad - 380061
 
 
 [Divider Line]

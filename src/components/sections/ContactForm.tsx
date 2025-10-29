@@ -142,7 +142,7 @@ const ContactForm = () => {
     {
       icon: MapPin,
       label: 'Address',
-      value: 'Ahmedabad, Gujarat, India',
+      value: 'Shayona Darshan 49, Near Vaibhav Orthopadic Hospital Chanakyapuri, Ahmedabad - 380061',
       href: null,
     },
   ];

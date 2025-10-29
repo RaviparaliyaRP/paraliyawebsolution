@@ -1,6 +1,6 @@
 # Paraliya Web Solution - Portfolio Website
 
-A modern, responsive portfolio website built with Next.js 14, TypeScript, and Tailwind CSS for Paraliya Web Solution - a web development agency based in Ahmedabad, Gujarat, India.
+A modern, responsive portfolio website built with Next.js 14, TypeScript, and Tailwind CSS for Paraliya Web Solution - a web development agency based in Shayona Darshan 49, Near Vaibhav Orthopadic Hospital Chanakyapuri, Ahmedabad - 380061.
 
 ## 🚀 Features
 
@@ -190,7 +190,7 @@ https://script.google.com/macros/s/AKfycbzs-8WKPOaCmJhbZ497Y4CTm-ndpXvHriwXQfBR5
 - **Email**: paraliyaravi80@gmail.com
 - **Phone**: +91 9898463251
 - **WhatsApp**: +91 9898463251
-- **Location**: Ahmedabad, Gujarat, India
+- **Location**: Shayona Darshan 49, Near Vaibhav Orthopadic Hospital Chanakyapuri, Ahmedabad - 380061
 
 ## 📄 License
 

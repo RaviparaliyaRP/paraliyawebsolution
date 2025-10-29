@@ -19,7 +19,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Paraliya Web Solution - Professional Web Development Services in Ahmedabad",
   description: "Transform your business with custom web solutions. We build fast, modern websites that turn visitors into customers. Trusted by 50+ businesses across India.",
-  keywords: "web development, website design, e-commerce, custom applications, Ahmedabad, Gujarat, India",
+  keywords: "web development, website design, e-commerce, custom applications, Shayona Darshan 49, Near Vaibhav Orthopadic Hospital Chanakyapuri, Ahmedabad - 380061",
   authors: [{ name: "Paraliya Web Solution" }],
   creator: "Paraliya Web Solution",
   publisher: "Paraliya Web Solution",

@@ -90,7 +90,7 @@ export default function PrivacyPage() {
           <ul>
             <li>Email: paraliyaravi80@gmail.com</li>
             <li>Phone: +91 9898463251</li>
-            <li>Address: Ahmedabad, Gujarat, India</li>
+            <li>Address: Shayona Darshan 49, Near Vaibhav Orthopadic Hospital Chanakyapuri, Ahmedabad - 380061</li>
           </ul>
         </div>
       </div>
