@@ -200,7 +200,7 @@ Creative designer focused on crafting intuitive and visually appealing user expe
 ## 🎯 SERVICES PAGE
 
 ### Service 1: Business Website Development
-**Starting from ₹25,000**
+**Starting from ₹15,000**
 
 Perfect for small to medium businesses looking to establish professional online presence.
 
@@ -438,7 +438,7 @@ Build professional websites that establish your online presence and drive growth
 (Format: Small icons with text, vertical list, compact spacing)
 
 [Price Badge]
-Starting from ₹25,000
+Starting from ₹15,000
 (Format: Highlighted badge/pill, bold text, accent bg)
 
 [CTA Link]
@@ -918,7 +918,7 @@ Perfect for small to medium businesses looking to establish professional online 
 (Format: Regular, 16-18px, 2-3 paragraphs)
 
 [Pricing Card - Highlighted Box]
-Starting from ₹25,000
+Starting from ₹15,000
 (Format: Large price, highlighted box, accent border/bg)
 
 [What's Included Section]
